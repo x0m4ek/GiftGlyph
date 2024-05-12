@@ -1,0 +1,70 @@
+.wrapper_custom_cards {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .big-text {
+        text-align: center;
+    }
+
+    .advs {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 250px;
+        .adv {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            .text-adv {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #545454;
+                    
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #545454;
+                }
+            }
+            .img-adv {
+                width: 64px;
+                height: 64px;
+            }
+          
+        }
+    }
+}
+
+@media screen and (max-width:1201px) {
+    .wrapper_custom_cards .advs {
+        gap: 50px;
+    }
+}
+@media screen and (max-width:850px) {
+    .wrapper_custom_cards .advs {
+        gap: 32px;
+    }
+    .wrapper_custom_cards .advs .adv .img-adv {
+        width: 48px;
+        height: 48px;
+    }
+    .wrapper_custom_cards .advs .adv {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width:400px) {
+    .wrapper_custom_cards .advs {
+        gap: 12px;
+    }
+}

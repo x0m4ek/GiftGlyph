@@ -1,0 +1,168 @@
+@use "../../utils/Variables" as t;
+
+.table_wrapper {
+  .MuiSelect-select:focus {
+    background-color:none !important;
+    background: none !important;
+      }
+      .MuiSvgIcon-root {
+        color: #fff;
+        margin-right: 8px;
+      }
+  .instance-installer {
+    align-self: center;
+    height: auto;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-size: 16px;
+    color: #fff;
+    .MuiInputBase-root {
+      margin-top: 0;
+    }
+    // .MuiSvgIcon-root {
+    //   margin-right: 16px;
+    // }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+
+
+        .top-items-table {
+       
+
+          th {
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+     
+            border-collapse: separate;
+          }
+          .product_th {
+            text-align: left;
+          }
+        }
+        th {
+          padding: 10px 38px;
+        }
+      
+      background: t.$ligt_primary;
+ 
+    }
+    .product-body {
+      border-bottom: 1px solid t.$primary;
+    }
+   tr td {
+    padding: 36px 0;
+   }
+    tbody {
+      .data_col {
+
+        .data { 
+          display: flex;
+          align-items: center;
+          gap: 15px;          
+          justify-content: flex-start;   
+          
+          p {
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+          }
+          img {
+            max-width: 112px;
+
+          }
+        }
+       
+      }
+      .price_col {
+        .price {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+
+          }
+          .credits {
+            font-size: 16px;
+          }
+        }
+      }
+      .quantify_col {
+        .quantify {
+          display: flex;
+          align-items: center;
+          gap: 23px;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+      .total_col {
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          text-align: center;
+          color: #000;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  
+  }
+  .buttons {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .checkout {
+       margin: 0; 
+       font-size: inherit;
+      line-height: 22px;
+      font-weight: 400; 
+      
+  }
+    .go-back {
+      padding: 16px 32px;
+      color: #1D1D1D;
+      border: 1px solid #1D1D1D;
+      border-radius: 4px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+      span {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+    .checkout {
+      padding: 16px 32px;
+      color: #fff;
+      background: t.$primary;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+      span {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    
+    }
+  }
+}

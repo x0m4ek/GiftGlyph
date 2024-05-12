@@ -1,0 +1,17 @@
+@use "../../utils/Variables" as t;
+.button_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: t.$primary;
+    border-radius: 4px;
+    &:hover {
+        background: t.$secondary;
+    }
+    span {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

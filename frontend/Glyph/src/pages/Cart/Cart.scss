@@ -1,0 +1,113 @@
+@use "../../utils/Variables" as t;
+.cart_wrapper {
+    .tom {
+        background: t.$primary;
+        padding: 28px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .title {
+            h3 {
+                color: #fff;
+                font-size: 48px;
+                font-weight: bold;
+            }
+        
+        }
+        .text- {
+            span {
+                font-size: 16px;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+    .wrapper-cart {
+        padding: 120px 0;
+        gap: 47px;
+        display: flex;
+        align-items: flex-start;
+
+        .table_wrapper {
+            flex: 1;
+        }
+        .details {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .table_wrapper table thead .top-items-table .price_th {
+        display: none;
+    }
+    .table_wrapper table thead .top-items-table .quan_th {
+        display: none;
+    }
+    .table_wrapper table tr .price_col {
+        display: none;
+    }
+    .table_wrapper table tr .quantify_col {
+        display: none;
+    }
+    .table_wrapper table thead .top-items-table th {
+        text-align: end;
+    }
+    .table_wrapper table tbody .total_col {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: end !important;
+        align-items: flex-end  !important;
+        
+        gap: 15px;
+        .quantify {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+    .table_wrapper .instance-installer {
+        align-self: flex-end !important;
+    }
+}
+
+@media screen and (max-width:1075px) {  
+    .cart_wrapper .wrapper-cart {
+        flex-direction: column;
+    }
+    .cart_wrapper .wrapper-cart .table_wrapper {
+        width: 100%;
+    }
+    .cart_wrapper .wrapper-cart .details {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .table_wrapper table tbody .data_col .data {
+        display: flex;
+        align-items: flex-start !important;
+        gap: 15px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .cart_wrapper .wrapper-cart {
+        padding: 36px 0;
+    }
+    .table_wrapper .instance-installer {
+        width: 100% !important;
+    }
+    .table_wrapper .buttons .go-back {
+        display: none;
+    }
+    .table_wrapper .buttons  {
+        width: 100%;
+    }
+    .table_wrapper .buttons .checkout {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

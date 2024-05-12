@@ -1,0 +1,68 @@
+.cards_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+
+   
+}
+.cards_wrapper.pc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 325px) ;
+    grid-template-rows: repeat(auto-fit, 205px);
+    grid-column-gap: 47px;
+    grid-row-gap: 36px;
+    .card_wrapper {
+        max-width: 325px;
+        width: 100%;
+    }
+}
+.swiper-slide {
+    max-width: 402px;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+
+    justify-content: space-between;
+    margin-right: 34px;
+}
+.swiper-wrapper {
+    justify-content: space-between;
+    align-items: end;
+    // gap: 34px;
+}
+.swiper  {
+    margin-top: 32px;
+}
+.grid_swiper .swiper-wrapper {
+    justify-content: flex-start;
+}
+.grid_slide {
+    // max-width: none;
+    justify-content: center;
+    margin-top: 32px !important;
+    .card_wrapper {
+        max-width: fit-content;
+    }
+}
+
+//custom slider classes
+.custom_slide {
+    margin-right: 40px;
+    max-width: 337px;
+}
+.custom_slider {
+    overflow: hidden !important;
+    .swiper-wrapper {
+        // justify-content: center;
+       
+    }
+}
+
+@media screen and (max-width:450px) {
+    .custom_slide {
+        max-width: 251px !important;
+    }
+}

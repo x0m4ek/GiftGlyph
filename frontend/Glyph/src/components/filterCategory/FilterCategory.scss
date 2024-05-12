@@ -1,0 +1,52 @@
+@use "../../utils/Variables" as t;
+.filter-category {
+
+    .category-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 24px;
+        width: 100%;
+        cursor: pointer;
+        margin-bottom: 5px;
+        .opened {
+            transform: rotate(180deg);
+        }
+        span {
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+        }
+        &:hover {
+            background: t.$ultra_ligt_primary;
+        }
+    
+    }
+    .category-list.active {
+        display: flex;
+    }
+    .category-list {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        .category-item.active {
+            background: t.$ultra_ligt_primary;
+            border-left: 5px solid t.$primary;
+        }
+        .category-item {
+            cursor: pointer;
+          
+            padding: 16px 24px;
+            width: 100%;
+            span {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 400;
+                color: #000;   
+            }
+            &:hover {
+                background: t.$ultra_ligt_primary;
+            }
+        }
+    }
+}

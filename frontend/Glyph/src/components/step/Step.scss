@@ -1,0 +1,176 @@
+@use "../../utils/Variables" as t;
+.MuiStepConnector-root{
+    top: 46px !important;
+    left: calc(-50% + 47px) !important;
+    right: calc(50% + 47px) !important;
+}
+.MuiStepIcon-text {
+    font-family: "Kumbh Sans", sans-serif !important;
+    font-size: 48px ;
+    fill: #fff !important;
+    font-weight: bold !important;
+}
+.MuiStepLabel-label  {
+    font-family: "Kumbh Sans", sans-serif !important;
+    font-size: 18px !important;
+    color: #545454 !important;
+    font-weight: 400 !important;
+    text-align: center;
+    margin-top: 21px;
+}
+.steps .MuiSvgIcon-root  {
+    z-index: 999;
+    width: 96px !important;
+    height: 96px !important;
+}
+.allax {
+    img {
+    max-height: 308px;
+    height: 100%;
+    }
+
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}    .so_good {
+    margin-top: 32px;
+}
+
+.so_good {
+    .swiper-slide {
+        width: 100% !important;
+        max-width: none !important  ;
+    }
+}
+.step_wrapper {
+
+    .number-step {
+        // padding: 22px 38px;
+        width: 96px;
+        height: 96px;
+        background: t.$primary;
+        border-radius: 100%;
+   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            font-weight: bold;
+            font-size: 48px;
+            color: #fff;
+        }
+    }
+}
+:root {
+    --circle-size: 96px;
+    --spacing: clamp(0.25rem, 2vw, 0.5rem);
+  }
+@media screen and (max-width:850px) {
+    .allax {
+        height: 220px;
+    }
+    .steper_slider {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                background: t.$primary;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active {
+                background: t.$secondary;
+            }
+        }
+    }
+    .slide_steps:nth-child(2) {
+       .circle {
+
+        &::before {
+            content: "2";
+        }}
+    }
+    .slide_steps:nth-child(3) {
+        .circle {
+ 
+         &::before {
+             content: "3";
+         }}
+     }
+
+    .slide_steps {
+       
+       
+      
+            max-width: none;
+            width:100% !important;
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+   
+        
+            .circle-top {
+                width: 100%;
+                overflow: hidden;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-color: t.$secondary;
+                    top: 22px;
+                 
+                    left: 0;
+                    z-index: 10;
+                  }
+            }
+            .circle {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                justify-content: center;
+                text-align: center;
+                -size: 3rem;
+                content: "1";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                position: relative;
+             
+                &::before {
+                    z-index: 12;
+                    content: "1";
+                    line-height: 48px;
+                    border-radius: 50%;
+                    width: 48px;
+                    height:  48px;
+                    display: block;
+                    text-align: center;
+                    // margin: 0 auto 10px;
+                    background-color: t.$primary;
+                    color: #fff;
+                    font-size: 32px;
+                    font-weight: bold;
+
+                }
+                &::after {
+                    z-index: 10;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-color:  t.$secondary;
+                    top: 22px;
+                    left: -50%;
+                    z-index: -1;
+                  }
+                
+                  
+            }
+    }
+}

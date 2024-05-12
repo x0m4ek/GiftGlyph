@@ -1,0 +1,45 @@
+
+
+@use "../../utils/Variables" as t;
+.warning {
+
+    background: t.$primary;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    .warning_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        justify-content: center;
+        min-height: 45px;
+        height: auto;
+    }
+    .back_arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: inherit;
+        }
+    }
+    .next_arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: inherit;
+        }
+    }
+
+    .text {
+        p {
+            font-weight: 400;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
+ 
+    }
+}

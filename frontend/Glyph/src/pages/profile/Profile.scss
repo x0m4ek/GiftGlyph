@@ -1,0 +1,97 @@
+@use "../../utils/Variables" as t;
+.wrapper-dashboard {
+    padding: 120px 0;
+
+    .blockss {
+        display: flex;
+        gap: 47px;
+        align-items:flex-start;
+
+        .block-jeden {
+            flex: 1;
+        }
+        .block-dva {
+            width: 35%;
+        }
+    }
+    .title {
+        h3 {
+            font-size: 32px;
+            font-weight: bold;  
+        }
+    }
+    .title-wrapper  {
+        padding: 16px 24px;
+        background: t.$ligt_primary;
+        border-radius: 5px;
+        .title {
+            h3 {
+                font-size: 32px;
+                font-weight: bold;
+            }
+        }
+    }
+  
+    .active-dowloads {
+  
+        border-radius: 5px;
+        // padding: 16px 24px;
+        .title- {
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1268px) {
+    .wrapper-dashboard .blockss {
+        flex-direction: column;
+    }
+    .wrapper-dashboard .blockss .block-jeden {
+        width: 100%;
+    }
+    .wrapper-dashboard .blockss .block-dva {
+        width: 100%;
+    }
+}
+@media screen and (max-width:900px) {
+    .dowload_wrapper .price-credits {
+        display: none ;
+    }
+    .dowload_wrapper .uptime {
+        display: none ;
+    }
+    .dowload_wrapper {
+        flex-wrap: nowrap !important;
+    }
+    .dowload_wrapper .renewal {
+
+        div {
+            display: flex !important;
+        }
+    }
+    .dowload_wrapper .renewal {
+        gap: 15px;
+    }
+    .dowload_wrapper div {
+        width: auto !important; 
+    
+    }
+    .dowload_wrapper .image-name {
+        width: 70% !important;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .dowload_wrapper .image-name {
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+        gap: 15px;
+        width: 40% !important;
+    }
+}

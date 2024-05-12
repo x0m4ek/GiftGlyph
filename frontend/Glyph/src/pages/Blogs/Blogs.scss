@@ -1,0 +1,71 @@
+.tom-big {
+  .big-text {
+
+    h3 {
+      color: #fff;
+    }
+  }
+
+}
+.blogs_wrapper {
+
+  .filters-blog {
+    padding: 36px 0;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    justify-content: flex-end;
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+    .sort-by {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+  }
+  .blogs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .pag {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width:450px) {
+  .blogs_wrapper .filters-blog {
+    padding: 36px 0;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+.blogs_wrapper .filters-blog .search {
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  
+  width: 100%;
+}
+.blogs_wrapper .filters-blog .sort-by {
+  width: 100%;
+  p {
+    width: 30%;
+  }
+  .MuiInputBase-root {
+    width: 100%;
+  }
+}
+}

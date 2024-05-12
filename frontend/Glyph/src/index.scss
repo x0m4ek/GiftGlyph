@@ -1,0 +1,198 @@
+  @use "./utils/Variables" as t;
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+
+  :root {
+    font-family: "Roboto", sans-serif;
+
+    --desktop-para1: Inter;
+
+    /* font sizes */
+    --desktop-para-size: 16px;
+    --desktop-h4-size: 24px;
+    --font-size-lgi: 19px;
+    --desktop-h5-size: 18px;
+    --desktop-h3-size: 32px;
+    --font-size-7xl: 26px;
+    --desktop-h2-size: 48px;
+    --desktop-sub-size: 12px;
+
+    /* Colors */
+    --basic-2: #fff;
+    --color-base-text-dark: #545454;
+    --color-base-dark: #1d1d1d;
+    --color-background-bg-2: #F4F1FF;
+    --color-black: #000;
+    --color-background-bg-1: #C2B6EE;
+    --color-lightgray: #cacaca;
+    --color-brand-main: #533FAC;
+    --bg-color: #f8f8f8;
+
+    /* Spacing */
+    --boundvariablesdata: 48px;
+    --boundvariablesdata1: 16px;
+    --boundvariablesdata2: 32px;
+    --padding-xs: 4px;
+
+    /* Gaps */
+    --gap-29xl: 48px;
+    --gap-5xl: 24px;
+    --gap-xl: 20px;
+    --gap-68xl: 87px;
+    --gap-24xl: 43px;
+    --gap-77xl: 96px;
+    --gap-base: 16px;
+    --gap-3xs-6: 9.6px;
+    --gap-28xl: 47px;
+    --gap-4xl: 23px;
+    --gap-17xl: 36px;
+    --gap-lg: 18px;
+    --gap-sm: 14px;
+    --gap-13xl: 32px;
+    --gap-16xl-8: 35.8px;
+    --gap-lgi: 19px;
+    --gap-27xl-8: 46.8px;
+    --gap-4xs-2: 8.2px;
+
+    /* Paddings */
+    --padding-34xl: 53px;
+    --padding-xl: 20px;
+    --padding-15xl: 34px;
+    --padding-3xs: 10px;
+    --padding-17xl: 36px;
+    --padding-5xl: 24px;
+    --padding-base: 16px;
+    --padding-7xl: 26px;
+    --padding-6xl: 25px;
+    --padding-10xs: 3px;
+    --padding-13xl: 32px;
+    --padding-9xs: 4px;
+    --padding-11xl: 30px;
+    --padding-41xl: 60px;
+    --padding-3xl: 22px;
+    --padding-4xl: 23px;
+    --padding-smi: 13px;
+    --padding-4xs-4: 8.4px;
+
+    /* Border radiuses */
+    --br-8xs: 5px;
+
+
+  }
+  /* Global classes */
+  .conteiner {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+  }
+  .small-text span  {
+    font-size: 14px;
+    color: #545454;
+    font-weight: 400;
+    text-align: center;
+  }
+  .bigger-text h1 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 84px;
+    color: #545454;
+  }
+  .tom {
+    background: t.$primary;
+    padding: 28px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .tom .title h3 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  .tom .text- span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+  }
+  .block-title p {
+  
+      color: #0A0905;
+      font-size: 32px;
+      font-weight: bold;
+    
+
+  }
+  .tom-big {
+    min-height: 358px;
+    height: auto;
+    background: t.$primary;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+  }
+  .main-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #545454;
+  }
+  .title-t p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }
+  .big-text h3 {
+    font-size: 48px;
+    color: #545454;
+    font-weight: bold;
+    line-height: 52px;
+  }
+
+  /* @media screen and (max-width:1260px) {
+    .conteiner {
+      width: calc(100% - 120px);
+      margin: 0 auto;
+    }
+  } */
+  @media screen and (max-width:850px) {
+      .big-text h3 {
+        font-size: 32px;
+        line-height: 36px;
+        
+      }
+      .small-text span {
+        font-size: 14px;
+      }
+      .bigger-text h1 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 52px;
+      }
+      .main-text p {
+        font-size: 14px;
+    
+      }
+
+  }
+  @media screen and (max-width:500px) {
+    
+    .conteiner {
+      width: calc(100% - 24px);
+      
+    }
+  }
+  @media screen and (max-width:450px) {
+    .tom-big {
+      min-height: 178px;
+    }
+}

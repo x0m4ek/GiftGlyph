@@ -1,0 +1,57 @@
+.brands {
+    background: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .brands-icons {
+        .swiper-wrapper {
+            gap: 0!important;
+            // margin-right: 94px;
+                .swiper-slide {
+                    max-width: 260px;
+                    width: 100%;
+                    margin-right: 0px;
+                }
+        }
+      
+    }
+    .small-text {
+
+        span {
+            font-size: 14px;
+            color: #545454;
+            font-weight: 400;
+        }
+  
+    }
+    .big-text {
+        h3 {
+            font-size: 48px;
+            color: #545454;
+            font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width:850px) {
+    .brands .big-text h3 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .brands .small-text span {
+        font-size: 14px;
+    }
+    .brands {
+ 
+    
+        .brands-icons {
+            .swiper-wrapper {
+                    gap: 0!important;
+                    // .swiper-slide {
+                    //     max-width: 168px;
+                    //     width: 100%;
+                    // }
+
+                }
+            }
+        }
+}

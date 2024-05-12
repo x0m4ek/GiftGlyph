@@ -1,0 +1,74 @@
+
+.inner-dowload {
+    padding: 36px 0;
+    border-bottom:1px solid #CACACA;
+    display: flex;
+
+   
+    flex-direction: column;
+}
+.buttons_download {
+    display: flex;
+    align-items: center;
+    gap: 26px; 
+    justify-content: flex-end;
+
+    div {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        img {
+            width: 16px;
+        }
+    }
+}
+.dowload_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+
+    div {
+        width: 25%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .image-name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 15px;
+        span {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        img {
+
+        
+        max-width: 112px;
+        }
+    }
+    .price-credits {
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .uptime {
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .renewal {
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}

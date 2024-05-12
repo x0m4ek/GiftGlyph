@@ -1,0 +1,69 @@
+@use "../../utils/Variables" as t;
+.filter_wrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .filter.active {
+        border: 3px solid t.$secondary;
+    }
+    .filter {
+        width: 120px;
+        cursor: pointer;
+        .img-filter {
+
+            max-width: 119px;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .text-fil {
+            margin-top: 16px;
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                line-height: 18px;
+                color: #545454;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    .category_wrappper .inner_cat {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .filter_wrapper .filter {
+        width: auto;
+    }
+    .filter_wrapper {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+    .filter_wrapper .filter .text-fil p {
+        font-size: 16px;
+    }
+    .filter_wrapper .filter .img-filter {
+        display: none;
+    }
+   
+    .filter_wrapper .filter.active {
+        border: none;
+        .text-fil {
+            border-bottom: 3px solid t.$secondary;
+        }
+
+    }
+    .filter_wrapper .filter .text-fil {
+        margin-top: 0;
+        padding: 10px 8px;
+        
+    }
+}

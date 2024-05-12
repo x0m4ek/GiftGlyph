@@ -1,0 +1,177 @@
+@use "../../utils/Variables" as t;
+.wrapper-product {
+    // padding: 80px 0;
+
+    .inner-product {
+        display: flex;
+        gap: 48px;
+        padding: 80px 0;
+        z-index: 7;
+        position: relative;
+        .image-product {
+            border-radius: 32px;
+            max-height: 720px;
+            height: 720px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* max-width: 828px; */
+            width: 45%;
+            background: t.$ultra_ligt_primary;
+            
+            img {
+                max-height: 400px;
+                padding-right: 20px;
+                padding-left: 20px;
+    
+            }
+        }
+        .data-product {
+           flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+           .name-product {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    color: #000;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 52px;
+                }
+                .price {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+            .buy-for {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                
+            
+            
+            }
+            .gift-cost {
+
+                span {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .custom-cost {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    .cost {
+                        span {
+                            color: #000;
+                            font-weight: bold;
+                            font-size: 32px;
+                        }
+                    }
+                  
+
+                    .button {
+                        cursor: pointer;
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+           
+            }
+            .buttons-cost {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+            }
+            .quantify {
+
+                span {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .buttons-quan {
+                    display: flex;
+                    align-items: baseline;
+                    gap: 32px;
+                }
+            }
+        }
+    }
+    .about-product {
+        padding: 80px 0;
+        background:  t.$ultra_ligt_primary;
+
+        .inner-about {
+            display: flex;
+            align-items: center;
+            gap: 64px;
+            .image-about {
+                max-height: 720px;
+                height: 720px;
+          
+                display: flex;
+                align-items: center;
+                justify-content: center;
+     
+                /* max-width: 828px; */
+                width: 45%;
+
+                img {
+                    max-height: 620px;
+                }
+            }
+            .text-about {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                flex-direction: column;
+                flex: 1;
+            }
+        }
+       
+
+    }
+  
+
+}
+
+@media screen and (max-width:1100px) {
+    .wrapper-product .inner-product {
+        flex-direction: column;
+    }
+    .wrapper-product .inner-product .image-product {
+        width: 100%;
+        height: 400px;
+
+    }
+    .wrapper-product .about-product .inner-about {
+        gap: 24px !important;
+        flex-direction: column;
+    }
+    .wrapper-product .about-product .inner-about .image-about {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .wrapper-product .inner-product .data-product .name-product span {
+        font-size: 32px;
+    }
+    .wrapper-product .inner-product .data-product .gift-cost .custom-cost {
+        justify-content: space-between;
+    }
+    .wrapper-product .inner-product .data-product .gift-cost .custom-cost .button {
+  
+        width: 46px;
+    }
+    .wrapper-product .inner-product .data-product .buttons-cost {
+        gap: 14px;
+    }
+}

@@ -1,0 +1,36 @@
+@use "../../utils/Variables" as t;
+.wrapper_btn_product {
+    border: 1px solid t.$primary;;
+    color: t.$primary;
+    width: 100%;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &:hover {
+        background:  t.$primary;;
+        color: #fff;
+    }
+}
+
+.wrapper_btn_product.active {
+    background: t.$primary;
+    color: #fff;
+}
+
+@media screen and (max-width:450px) {
+    .wrapper_btn_product {
+
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+
+}

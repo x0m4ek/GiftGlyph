@@ -1,0 +1,30 @@
+@use "../../utils/Variables" as t;
+.details-user {
+    .top-title {
+        background: t.$ligt_primary;
+        border-radius:5px ;
+        padding: 16px 24px;
+        p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .items {
+        background: t.$ultra_ligt_primary;
+        border-radius: 5px;
+
+        .item {
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            p {
+
+                word-break: break-word;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}

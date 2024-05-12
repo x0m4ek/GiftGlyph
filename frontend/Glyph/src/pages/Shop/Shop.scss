@@ -1,0 +1,16 @@
+.shop_wrapper {
+    padding: 80px 0;
+    z-index: 7;
+    position: relative;
+    .inner {
+        display: flex;
+        align-items: flex-start;
+        gap: 22px;
+        .filters {
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@use "../../utils/Variables" as t;
+.wrapper_contact {
+    background:  url("../../images/layer.png") no-repeat,t.$primary;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+
+    .title {
+     
+        text-align: center;
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    .wrapper_ {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      
+    }
+    .contacts {
+        width: 100%;
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+ 
+        div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            img {
+                width: 36px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+    }
+    
+    .inputs div {
+        display: flex;
+        gap: 55px;
+        align-items: center;
+        .MuiTextField-root {
+            width: 100%;
+
+            .MuiInputBase-root {
+                width: 100%;
+            }
+        }
+    }
+    .inputs {
+        margin-top: 64px;
+        display: flex;
+        gap: 64px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .inputs div  {
+        .MuiOutlinedInput-notchedOutline {
+            border: 0px solid !important;
+        }
+    }
+    .send-mes {
+        margin-top: 64px;
+        padding: 16px 32px;
+        border: 1px solid #fff;
+        width: auto;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width:200px ;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+@media screen and (max-width:850px) {
+    .wrapper_contact .contacts {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 44px;
+    }
+    .wrapper_contact .contacts div {
+        gap: 16px;
+    }
+}
+@media screen and (max-width:450px) {
+    .wrapper_contact .inputs div {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .wrapper_contact .inputs {
+        gap: 16px;
+    }
+    .wrapper_contact .inputs div .MuiTextField-root .MuiInputBase-root {
+        padding-left: 11px;
+    }
+}

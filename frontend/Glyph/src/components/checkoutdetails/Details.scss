@@ -1,0 +1,42 @@
+@use "../../utils/Variables" as t;
+.details {
+    background: t.$ultra_ligt_primary;
+    border-radius: 5px;
+    .top-s {
+        padding: 16px 24px;
+        background: t.$ligt_primary;;
+        p {
+            color: #000000;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .details_wrapper {
+        border-radius: 5px;
+        padding: 36px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .grand-total{
+        border-top: 1px solid #CACACA;
+        padding: 36px 25px 20px 25px;
+        display: block;
+
+        .total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                color: #000;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}

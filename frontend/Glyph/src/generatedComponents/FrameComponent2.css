@@ -1,0 +1,129 @@
+.jampinterest-icon,
+.mdiinstagram-icon,
+.mditwitter-icon,
+.rifacebook-fill-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.elevate-style-button {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.elevate-style-button-wrapper {
+  width: 168px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-smi);
+  box-sizing: border-box;
+}
+.giftvista-icon,
+.logo-1-icon {
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.logo-1-icon {
+  height: 51px;
+  width: 49.7px;
+  object-fit: cover;
+}
+.giftvista-icon {
+  align-self: stretch;
+  height: 33.4px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.company-logo,
+.logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.company-logo {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-4xs-4) 0 0;
+}
+.logo {
+  width: 247px;
+  flex-shrink: 0;
+  flex-direction: row;
+  gap: var(--gap-4xs-2);
+}
+.epuser-icon,
+.f7cart-icon,
+.iconamoonsearch-thin {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.iconamoonsearch-thin-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frame-inner {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  object-fit: cover;
+  min-height: 24px;
+}
+.frame-container,
+.frame-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.frame-container {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.frame-wrapper {
+  width: 168px;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-smi);
+  box-sizing: border-box;
+}
+.frame-group,
+.nav-bar-inner {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frame-group {
+  width: 1680px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-3xl) 0 var(--padding-4xl);
+  gap: var(--gap-xl);
+}
+.nav-bar-inner {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}

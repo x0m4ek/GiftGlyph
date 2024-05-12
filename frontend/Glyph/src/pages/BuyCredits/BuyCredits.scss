@@ -1,0 +1,84 @@
+@use "../../utils/Variables" as t;
+.tom-big .big-text h3 {
+    color: #fff;
+
+}
+.wrapper_credits {
+
+    .titles {
+        margin-top: 80px;
+        margin-bottom: 64px;
+    }
+   .block-title {
+    text-align: center;
+   }
+   .text-main {
+    text-align: center;
+   }
+    .credits {
+        // margin-top: ;
+   
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 600px);
+    grid-column-gap: 24px;
+    grid-row-gap: 64px;
+   }
+}
+
+
+@media screen and (max-width:1400px) {
+    .credits {
+     
+        grid-template-columns: repeat(3, auto) !important;
+        grid-template-rows: repeat(4, 600px) !important;
+        grid-auto-rows: 1fr;
+    }
+}
+@media screen and (max-width:1010px) {
+    .credits {
+     
+        grid-template-columns: repeat(2, auto) !important;
+        grid-template-rows: repeat(5, 600px) !important;
+        grid-auto-rows: 1fr;
+    }
+}
+@media screen and (max-width:760px) {
+    .wrapper_credits .titles {
+        margin-top: 32px;
+    }
+    .credits {
+        margin-top: 32px;
+        
+     
+    
+        grid-template-rows: repeat(5, 400px) !important;
+    
+    }
+    .credit_wrapper .credit-img p {
+        font-size: 28px !important;
+        line-height: 28px !important;
+    }
+    .credit_wrapper .price p {
+        font-size: 24px !important;
+        text-align: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .credits {
+        grid-template-rows: repeat(5, 330px) !important;
+    }
+    .credit_wrapper .add-to-cart {
+        gap: 5px;
+    }
+    .wrapper_credits .credits {
+        grid-column-gap: 12px;
+        grid-row-gap: 32px;
+    }
+}
+@media screen and (max-width:365px) {
+    .credits {
+        grid-template-columns: repeat(1, auto) !important;
+        grid-template-rows: repeat(8, 330px) !important;
+    }
+}

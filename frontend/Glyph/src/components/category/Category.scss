@@ -1,0 +1,31 @@
+.category_wrappper {
+
+    .inner_cat {
+        display: flex;
+        gap: 120px;
+        // align-items: center;
+        .cards {
+            width: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
+
+            .card_wrapper {
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .cards.small {
+     
+        .swiper-slide {
+            max-width: 195px;
+        }
+        .card_wrapper {
+             
+        }
+    }
+}

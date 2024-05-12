@@ -1,0 +1,10 @@
+@media screen and (max-width:450px) {
+    .wrapper_register {
+        .inputs {
+            flex-direction: column;
+            .MuiFormControl-root {
+                width: 100% !important;
+            }
+        }
+    }
+}

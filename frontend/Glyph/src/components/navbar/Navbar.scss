@@ -1,0 +1,171 @@
+.navbar {
+    .conteiner {
+
+
+
+        .top-sec {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            height: auto;
+            padding: 22px 0;
+            background: #fff;
+            .socials {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                z-index: 2;
+
+                div {
+                    cursor: pointer;
+                }
+            }
+            .logo   {
+                position: absolute;
+                margin: 0 auto;
+                width: 100%;
+                align-self: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 247px;
+                }
+            }
+            .nav {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                z-index: 2;
+                .menu {
+                    display: none;
+                }
+                div {
+                    cursor: pointer;
+                }
+            }
+        }
+        .second-sec {
+            background: #fff;
+            padding: 24px 0px;
+
+            .nav {
+                display: none;
+            }
+            .menu {
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 48px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        a {
+                            color: #545454;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .navbar .conteiner .top-sec .socials {
+
+        display: none;
+    }
+    .navbar .conteiner .top-sec .nav  {
+        align-self: center;
+    }
+    .navbar .conteiner .top-sec .logo {
+        position: inherit;
+        margin: 0;
+        width: auto;
+    }
+    .navbar .conteiner .top-sec .logo img {
+        width: 170px;
+    }
+    .navbar .conteiner .top-sec .nav div {
+        display: none;
+    }
+    .navbar .conteiner .top-sec .nav .cart {
+        display: block;
+    }
+    .navbar .conteiner .top-sec .nav .menu {
+        display: block;
+    }
+    .navbar .conteiner .second-sec .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .conteiner .second-sec .menu ul li a {
+        font-size: 17px;
+    }
+    .top-sec {
+        z-index: 9;
+      
+    }
+    .warning {
+        z-index: 9;
+        position: relative;
+    }
+    .second-sec.active {
+        border-top: 1px solid #F8F8F8;
+  
+    }
+    .second-sec {
+        background: none   !important;
+        padding: 0 !important;;
+    }
+    .navbar {
+        position: relative;
+    }
+    .second-sec.active {
+        z-index: 8;
+    }
+    .second-sec {
+       
+     
+        width: 100%;
+        left: 0;
+        top: 75px;
+        position: absolute;
+  
+        .menu {
+            padding-top: 36px;
+            border-bottom: 1px solid #F8F8F8;
+            border-top: 1px solid #F8F8F8;
+            top: 3px;
+            padding-bottom: 24px;
+            overflow: hidden;
+            z-index: 8;
+            background: #fff;
+            transition: 0.6s;
+            position: relative;
+            transform: translate(0px, -500px);
+        }
+        .menu.active {
+           
+            transform: translate(0px, 0);
+        }
+    }
+    .navbar .conteiner .second-sec .nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: center;
+        margin-top: 48px;
+    }
+    .second-sec .nav .menu {
+        display: none !important;
+    }
+}
