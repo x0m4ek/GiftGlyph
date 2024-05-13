@@ -5,7 +5,9 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 import { colors } from '../../utils/config';
-function TableBody({image, name,  count, priceProduct,updateTotalPrice}) {
+
+
+function TableBody({image, name,  count, priceProduct,updateTotalPrice, id}) {
 
     const [value, setValue] = useState();
     const [quantify, setQuantify] = useState(count);
@@ -20,6 +22,21 @@ function TableBody({image, name,  count, priceProduct,updateTotalPrice}) {
       updateTotalPrice(priceChange);
       setPrevPrice(newPrice);
     }, [quantify, priceProduct, prevPrice, updateTotalPrice]);
+
+    useEffect(() => {
+      console.log("quantify",quantify)
+      if (quantify === 0) {
+          removeFromLocalStorage();
+         
+      } 
+  }, [quantify]);
+
+  const removeFromLocalStorage = () => {
+      const existingItems = JSON.parse(localStorage.getItem('cart')) || [];
+      const updatedItems = existingItems.filter(item => item.id !== id);
+      localStorage.setItem('cart', JSON.stringify(updatedItems));
+  };
+
     useEffect(()=> {
      
       updateTotalPrice(price)
@@ -54,7 +71,8 @@ function TableBody({image, name,  count, priceProduct,updateTotalPrice}) {
                         displayEmpty
                         defaultValue={"hourly"}
                         sx={{
-                            background: `${colors.primary}`,
+                          background: `${colors.primary}`,
+
                             padding:"8px 16px",
                             borderRadius:"8px",
                             color:"#fff",
@@ -86,7 +104,8 @@ function TableBody({image, name,  count, priceProduct,updateTotalPrice}) {
                         displayEmpty
                         defaultValue={"hourly"}
                         sx={{
-                            background: `${colors.primary}`,
+                          background: `${colors.primary}`,
+
                             padding:"8px 16px",
                             borderRadius:"8px",
                             color:"#fff",

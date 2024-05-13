@@ -13,221 +13,221 @@ import 'swiper/css';
 import { useSwiper } from 'swiper/react';
 import CardV2 from '../card/CardV2';
 import { useMediaQuery } from 'react-responsive';
+import { cards, GamingCards, BeutyCards, FashionCards } from '../../products/Products';
 
 function SliderV2({onBackClick, onNextClick, CardsSelected}) {
-  const AllCards = [
-    {
-      image: Card1,
-      name: "PlayStation",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card2,
-      name: "Spotify",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card3,
-      name: "UberEats",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card4,
-      name: "Starbucks",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-        image: Card1,
-        name: "PlayStation",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card2,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card6,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
+  // const AllCards = [
+  //   {
+  //     image: Card1,
+  //     name: "PlayStation",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card2,
+  //     name: "Spotify",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card3,
+  //     name: "UberEats",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card4,
+  //     name: "Starbucks",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //       image: Card1,
+  //       name: "PlayStation",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card2,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card6,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
      
-      {
-        image: Card5,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-     
-     
-  ];
-  console.log("CardsSelected", CardsSelected);
-  const GamingCards = [
-    {
-      image: Card2,
-      name: "PlayStation",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card1,
-      name: "Spotify",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card3,
-      name: "UberEats",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card4,
-      name: "Starbucks",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-        image: Card1,
-        name: "PlayStation",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card2,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card6,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-     
-      {
-        image: Card5,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
+  //     {
+  //       image: Card5,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
      
      
-  ];
-  const BeautyCards = [
-    {
-      image: Card3,
-      name: "PlayStation",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card2,
-      name: "Spotify",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card3,
-      name: "UberEats",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card4,
-      name: "Starbucks",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-        image: Card1,
-        name: "PlayStation",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card2,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card6,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
+  // ];
+  // const GamingCards = [
+  //   {
+  //     image: Card2,
+  //     name: "PlayStation",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card1,
+  //     name: "Spotify",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card3,
+  //     name: "UberEats",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card4,
+  //     name: "Starbucks",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //       image: Card1,
+  //       name: "PlayStation",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card2,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card6,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
      
-      {
-        image: Card5,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-     
-     
-  ];
-  const FashionCards = [
-    {
-      image: Card4,
-      name: "PlayStation",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card1,
-      name: "Spotify",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card3,
-      name: "UberEats",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card4,
-      name: "Starbucks",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-        image: Card1,
-        name: "PlayStation",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card2,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card6,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-     
-      {
-        image: Card5,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
+  //     {
+  //       image: Card5,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
      
      
-  ];
+  // ];
+  // const BeautyCards = [
+  //   {
+  //     image: Card3,
+  //     name: "PlayStation",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card2,
+  //     name: "Spotify",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card3,
+  //     name: "UberEats",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card4,
+  //     name: "Starbucks",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //       image: Card1,
+  //       name: "PlayStation",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card2,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card6,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+     
+  //     {
+  //       image: Card5,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+     
+     
+  // ];
+  // const FashionCards = [
+  //   {
+  //     image: Card4,
+  //     name: "PlayStation",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card1,
+  //     name: "Spotify",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card3,
+  //     name: "UberEats",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //     image: Card4,
+  //     name: "Starbucks",
+  //     priceMin: 50,
+  //     priceMax: 200,
+  //   },
+  //   {
+  //       image: Card1,
+  //       name: "PlayStation",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card2,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+  //     {
+  //       image: Card6,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+     
+  //     {
+  //       image: Card5,
+  //       name: "Spotify",
+  //       priceMin: 50,
+  //       priceMax: 200,
+  //     },
+     
+     
+  // ];
   const isMobile = useMediaQuery({ query: '(max-width: 1080px)' }); // Визначаємо, чи є поточний пристрій мо
  
 
@@ -236,13 +236,14 @@ function SliderV2({onBackClick, onNextClick, CardsSelected}) {
   const swiper = useSwiper();
   const renderCards = () => {
     if(CardsSelected === "all") {
-        return AllCards.map((card, index) => (
+        return cards.map((card, index) => (
             <SwiperSlide key={index}>
               <CardV2
                 image={card.image}
                 name={card.name}
                 priceMin={card.priceMin}
                 priceMax={card.priceMax}
+                url={card.id}
               />
             </SwiperSlide>
           ));
@@ -255,18 +256,20 @@ function SliderV2({onBackClick, onNextClick, CardsSelected}) {
                 name={card.name}
                 priceMin={card.priceMin}
                 priceMax={card.priceMax}
+                url={card.id}
               />
             </SwiperSlide>
           ));
     }
     else if (CardsSelected === "beauty") {
-        return BeautyCards.map((card, index) => (
+        return BeutyCards.map((card, index) => (
             <SwiperSlide key={index}>
               <CardV2
                 image={card.image}
                 name={card.name}
                 priceMin={card.priceMin}
                 priceMax={card.priceMax}
+                url={card.id}
               />
             </SwiperSlide>
           ));
@@ -279,6 +282,7 @@ function SliderV2({onBackClick, onNextClick, CardsSelected}) {
                 name={card.name}
                 priceMin={card.priceMin}
                 priceMax={card.priceMax}
+                url={card.id}
               />
             </SwiperSlide>
           ));
@@ -302,13 +306,14 @@ function SliderV2({onBackClick, onNextClick, CardsSelected}) {
     if(CardsSelected === "all") {
         return (
             <div className="cards_wrapper pc">
-              {AllCards.map((card, index) => (
+              {cards.map((card, index) => (
                 <CardV2
                   key={index}
                   image={card.image}
                   name={card.name}
                   priceMin={card.priceMin}
                   priceMax={card.priceMax}
+                  url={card.id}
                 />
               ))}
             </div>
@@ -325,6 +330,7 @@ function SliderV2({onBackClick, onNextClick, CardsSelected}) {
                   name={card.name}
                   priceMin={card.priceMin}
                   priceMax={card.priceMax}
+                  url={card.id}
                 />
               ))}
             </div>
@@ -333,13 +339,14 @@ function SliderV2({onBackClick, onNextClick, CardsSelected}) {
     else if (CardsSelected === "beauty") {
         return (
             <div className="cards_wrapper pc">
-              {BeautyCards.map((card, index) => (
+              {BeutyCards.map((card, index) => (
                 <CardV2
                   key={index}
                   image={card.image}
                   name={card.name}
                   priceMin={card.priceMin}
                   priceMax={card.priceMax}
+                  url={card.id}
                 />
               ))}
             </div>
@@ -355,6 +362,7 @@ function SliderV2({onBackClick, onNextClick, CardsSelected}) {
                   name={card.name}
                   priceMin={card.priceMin}
                   priceMax={card.priceMax}
+                  url={card.id}
                 />
               ))}
             </div>

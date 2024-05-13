@@ -1,8 +1,10 @@
 import React from 'react';
 import "./GiftNow.scss";
 import Button from '../button/Button';
+import { useNavigate } from 'react-router-dom';
 
 function GiftNow() {
+    const navigate = useNavigate();
   return (
     <>
     <div className="conteiner">
@@ -22,7 +24,7 @@ function GiftNow() {
                     <p>Discover the simplicity of sending joy instantly with e-gift cards. Say goodbye to the hassle of traditional shopping and mailing – just a few clicks and your thoughtful present is on its way. Embrace the convenience of modern gifting today.</p>
                 </div>
                 <div className="gift-button">
-                    <Button buttonText={"Gift now"}/>
+                    <Button buttonText={"Gift now"} onClick={() => navigate("./shop")}/>
                 </div>
         </div>
         </div>

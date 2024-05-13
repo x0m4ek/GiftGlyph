@@ -12,94 +12,9 @@ import { Grid } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/grid';
 import { useSwiper } from 'swiper/react';
+import {cards} from '../../products/Products';
 function GridSlider({onBackClick, onNextClick}) {
-  const cards = [
-    {
-      image: Card1,
-      name: "PlayStation",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card2,
-      name: "Spotify",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card3,
-      name: "UberEats",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card4,
-      name: "Starbucks",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-        image: Card1,
-        name: "PlayStation",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card2,
-        name: "Spotify",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card3,
-        name: "UberEats",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card4,
-        name: "Starbucks",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card3,
-        name: "UberEats",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card4,
-        name: "Starbucks",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-          image: Card1,
-          name: "PlayStation",
-          priceMin: 50,
-          priceMax: 200,
-        },
-        {
-          image: Card2,
-          name: "Spotify",
-          priceMin: 50,
-          priceMax: 200,
-        },
-        {
-          image: Card3,
-          name: "UberEats",
-          priceMin: 50,
-          priceMax: 200,
-        },
-        {
-          image: Card4,
-          name: "Starbucks",
-          priceMin: 50,
-          priceMax: 200,
-        },
-  ];
-
+ 
 
  
   useEffect(() => {
@@ -175,7 +90,7 @@ function GridSlider({onBackClick, onNextClick}) {
           name={card.name}
           priceMin={card.priceMin}
           priceMax={card.priceMax}
-        
+          url={card.id}
         />
         </SwiperSlide>
       ))}

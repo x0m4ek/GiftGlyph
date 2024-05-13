@@ -15,94 +15,9 @@ import 'swiper/css';
 import { useSwiper } from 'swiper/react';
 import Back from "../../images/nextarrow.png";
 import Next from "../../images/backarrow.png";
-
+import {cards} from '../../products/Products';
 function Slider() {
-  const cards = [
-    {
-      image: Card1,
-      name: "Starbucks PlayStation fsdfsdfsd  " ,
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card2,
-      name: "Spotify",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card3,
-      name: "UberEats",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card4,
-      name: "Starbucks",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-        image: Microsoft,
-        name: "Microsoft",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Monobank,
-        name: "Monobank",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card3,
-        name: "UberEats",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Nature,
-        name: "Nature",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Moon,
-        name: "Moon",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card4,
-        name: "Starbucks",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-          image: Card1,
-          name: "PlayStation",
-          priceMin: 50,
-          priceMax: 200,
-        },
-        {
-          image: Card2,
-          name: "Spotify",
-          priceMin: 50,
-          priceMax: 200,
-        },
-        {
-          image: Card3,
-          name: "UberEats",
-          priceMin: 50,
-          priceMax: 200,
-        },
-        {
-          image: Card4,
-          name: "Starbucks",
-          priceMin: 50,
-          priceMax: 200,
-        },
-  ];
+ 
   const [backState,setBackState] = useState(false);
   const [nextState, setNextState] = useState(false);
   const handleClickBack = () => {
@@ -173,7 +88,7 @@ function Slider() {
           name={card.name}
           priceMin={card.priceMin}
           priceMax={card.priceMax}
-        
+          url={card.id}
         />
         </SwiperSlide>
       ))}

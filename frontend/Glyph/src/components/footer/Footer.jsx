@@ -22,17 +22,17 @@ function Footer() {
             <div className="right-side">
                 <div className="block">
                     <p>Company</p>
-                    <li><a href="#">For Business</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Buy eGift Cards</a></li>
-                    <li><a href="#">Buy Gaming</a></li>
+                    <li><a href="/contactus">For Business</a></li>
+                    <li><a href="/blogs">Blog</a></li>
+                    <li><a href="/shop">Buy eGift Cards</a></li>
+                    <li><a href="/shop">Buy Gaming</a></li>
                 </div>
                 <div className="block">
                     <p>Policy & Info</p>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Agent Contact</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <li><a href="/contactus">Contact Us</a></li>
+                    <li><a href="/contactus">Agent Contact</a></li>
+                    <li><a href="/shop">Services</a></li>
                 </div>
                 <div className="block">
                     <p>Our Social</p>

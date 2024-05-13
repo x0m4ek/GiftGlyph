@@ -13,6 +13,7 @@ import Monobank from "../../images/monobank.png";
 import Moon from "../../images/moon.jpg";
 import Nature from "../../images/nature.png";
 import { Pagination } from '@mui/material';
+import { cards } from '../../products/Products';
 function Products({filter}) {
   const [value, setValue] = useState('');
 
@@ -20,81 +21,7 @@ function Products({filter}) {
     setValue(event.target.value);
   };
 
-  const cards = [
-    {
-      image: Card1,
-      name: "PlayStation",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card2,
-      name: "Spotify",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card3,
-      name: "UberEats",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-      image: Card4,
-      name: "Starbucks",
-      priceMin: 50,
-      priceMax: 200,
-    },
-    {
-        image: Card1,
-        name: "PlayStation",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Nature,
-        name: "Nature",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Monobank,
-        name: "Mono",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card4,
-        name: "Starbucks",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Card3,
-        name: "UberEats",
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-        image: Moon,
-        name: "Moon" ,
-        priceMin: 50,
-        priceMax: 200,
-      },
-      {
-          image: Card1,
-          name: "PlayStation",
-          priceMin: 50,
-          priceMax: 200,
-        },
-        {
-          image: Card2,
-          name: "Spotify",
-          priceMin: 50,
-          priceMax: 200,
-        },
-      
-  ];
+  
   return (
     <>
     <div className="wrapper-prod">
@@ -132,7 +59,7 @@ function Products({filter}) {
           name={card.name}
           priceMin={card.priceMin}
           priceMax={card.priceMax}
-          url={"1213"}
+          url={card.id}
         />
  
       ))}

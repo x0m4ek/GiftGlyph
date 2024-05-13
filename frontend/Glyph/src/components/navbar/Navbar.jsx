@@ -89,7 +89,7 @@ function Navbar() {
 <path d="M6.5 0H0.5L6.5 6L12.5 0H6.5Z" fill="#545454"/>
 </svg>
 </li>
-                            <li><a href="#">BestSeller</a><svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <li><a href="/buycredits">Buy Credits</a><svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.5 0H0.5L6.5 6L12.5 0H6.5Z" fill="#545454"/>
 </svg>
 </li>

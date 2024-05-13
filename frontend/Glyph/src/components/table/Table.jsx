@@ -5,12 +5,12 @@ import Card1 from "../../images/card1.png";
 import GroupedButtons from '../quantifyIncreser/GroupedButtons';
 import TableBody from '../tableBody/TableBody';
 import Moon from "../../images/moon.jpg";
-import { useNavigate } from 'react-router-dom';
+import { json, useNavigate } from 'react-router-dom';
 
 
 function Table({totalPriceHandler}) {
   const [totalPrice, setTotalPrice] = useState(0);
- 
+ const [cart, setCart] = useState([]);
   const updateTotalPrice = (priceChange) => {
     setTotalPrice(prevTotalPrice => prevTotalPrice + priceChange);
   };
@@ -22,15 +22,10 @@ function Table({totalPriceHandler}) {
     totalPriceHandler(totalPrice)
   },[totalPrice])
   
-  
-  const productData = {
-    image:Card1,
-    name:"Playstaion",
-    price:40,
-    count:3,
-    
-
-  }
+    useEffect(() => {
+      const storedCart = JSON.parse(localStorage.getItem("cart"))
+      setCart(storedCart);
+    },[])
   
 
 
@@ -47,22 +42,21 @@ function Table({totalPriceHandler}) {
           </tr>
         </thead>
         <tbody>
-          <TableBody 
-          image={productData.image}
-          name={productData.name}
-          priceProduct={productData.price}
-          count={productData.count}
-          updateTotalPrice={updateTotalPrice}
-    
-          />
-           <TableBody 
-          image={Moon}
-          name={productData.name}
-          priceProduct={productData.price}
-          count={5}
-          updateTotalPrice={updateTotalPrice}
-          />
-          {/* Додайте додаткові рядки, якщо потрібно */}
+        {cart ? (
+          cart.map((item) => (
+              <TableBody 
+                  key={item.id}
+                  image={item.image}
+                  name={item.name}
+                  priceProduct={item.priceMin}
+                  count={item.count}
+                  updateTotalPrice={updateTotalPrice}
+                  id={item.id}
+              />
+          ))
+      ) : (
+          <p className='text-center w-[100%] text-xl'>Cart is empty</p>
+      )}
         </tbody>
       </table>
       <div className="buttons">
