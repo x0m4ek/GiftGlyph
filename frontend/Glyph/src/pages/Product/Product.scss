@@ -129,7 +129,7 @@
             .text-about {
                 display: flex;
                 gap: 16px;
-                align-items: center;
+                align-items: flex-start;
                 flex-direction: column;
                 flex: 1;
             }
