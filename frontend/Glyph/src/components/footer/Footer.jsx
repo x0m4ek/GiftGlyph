@@ -29,7 +29,7 @@ function Footer() {
                 </div>
                 <div className="block">
                     <p>Policy & Info</p>
-                    <li><a href="/aboutus">About Us</a></li>
+                    <li><a href="/about">About Us</a></li>
                     <li><a href="/contactus">Contact Us</a></li>
                     <li><a href="/contactus">Agent Contact</a></li>
                     <li><a href="/shop">Services</a></li>
